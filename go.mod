@@ -1,14 +1,16 @@
-module github.com/mpppk/cli-template
+module github.com/mpppk/anacondaaaa
 
 go 1.12
 
 require (
-	github.com/blang/semver v3.5.1+incompatible
-	github.com/mitchellh/go-homedir v1.1.0
-	github.com/rhysd/go-github-selfupdate v1.1.0
-	github.com/spf13/afero v1.2.2
-	github.com/spf13/cobra v0.0.5
-	github.com/spf13/pflag v1.0.3
-	github.com/spf13/viper v1.4.0
+	github.com/ChimeraCoder/anaconda v2.0.0+incompatible
+	github.com/ChimeraCoder/tokenbucket v0.0.0-20131201223612-c5a927568de7 // indirect
+	github.com/azr/backoff v0.0.0-20160115115103-53511d3c7330 // indirect
+	github.com/dustin/go-jsonpointer v0.0.0-20160814072949-ba0abeacc3dc // indirect
+	github.com/dustin/gojson v0.0.0-20160307161227-2e71ec9dd5ad // indirect
+	github.com/garyburd/go-oauth v0.0.0-20180319155456-bca2e7f09a17 // indirect
+	github.com/google/go-cmp v0.3.1
+	github.com/mitchellh/mapstructure v1.1.2
+	golang.org/x/net v0.0.0-20190522155817-f3200d17e092 // indirect
 	golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7
 )
