@@ -34,14 +34,6 @@ const (
 	MessageCreateEventType EventType = "message_create"
 )
 
-type CRCRequest struct {
-	CRCToken string `json:"crc_token" query:"crc_token"`
-}
-
-type CRCResponse struct {
-	ResponseToken string `json:"response_token"`
-}
-
 type FavoriteEvent struct {
 	Id              string         `json:"id"`
 	CreatedAt       string         `json:"created_at"`
