@@ -1,7 +1,11 @@
+/**
+anacondaaaa is anaconda support library for Twitter Account Activity.
+*/
 package anacondaaaa
 
 import (
 	"fmt"
+
 	"github.com/ChimeraCoder/anaconda"
 	"github.com/mitchellh/mapstructure"
 	"golang.org/x/xerrors"
@@ -75,13 +79,15 @@ type MessageData struct {
 	Entities *Entities `json:"entities"`
 }
 
+type TargetRecipient struct {
+	RecipientId string `json:"recipient_id"`
+}
+
 type MessageCreate struct {
-	Target struct {
-		RecipientId string `json:"recipient_id"`
-	} `json:"target"`
-	SenderId    string      `json:"sender_id"`
-	SourceAppId string      `json:"source_app_id"`
-	MessageData MessageData `json:"message_data"`
+	Target      TargetRecipient `json:"target"`
+	SenderId    string          `json:"sender_id"`
+	SourceAppId string          `json:"source_app_id"`
+	MessageData MessageData     `json:"message_data"`
 }
 
 type DirectMessageEvent struct {
@@ -92,20 +98,16 @@ type DirectMessageEvent struct {
 }
 
 type DirectMessageIndicateTypingEvent struct {
-	CreatedTimestamp string `json:"created_timestamp"`
-	SenderId         string `json:"sender_id"`
-	Target           struct {
-		RecipientId string `json:"recipient_id"`
-	} `json:"target"`
+	CreatedTimestamp string          `json:"created_timestamp"`
+	SenderId         string          `json:"sender_id"`
+	Target           TargetRecipient `json:"target"`
 }
 
 type DirectMessageMarkReadEvent struct {
-	CreatedTimestamp string `json:"created_timestamp"`
-	SenderId         string `json:"sender_id"`
-	Target           struct {
-		RecipientId string `json:"recipient_id"`
-	} `json:"target"`
-	LastReadEventId string `json:"last_read_event_id"`
+	CreatedTimestamp string          `json:"created_timestamp"`
+	SenderId         string          `json:"sender_id"`
+	Target           TargetRecipient `json:"target"`
+	LastReadEventId  string          `json:"last_read_event_id"`
 }
 
 type TweetDeleteEvent struct {
