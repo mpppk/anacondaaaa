@@ -11,6 +11,6 @@ require (
 	github.com/garyburd/go-oauth v0.0.0-20180319155456-bca2e7f09a17 // indirect
 	github.com/google/go-cmp v0.3.1
 	github.com/mitchellh/mapstructure v1.1.2
-	golang.org/x/net v0.0.0-20190921015927-1a5e07d1ff72 // indirect
+	golang.org/x/net v0.0.0-20190923162816-aa69164e4478 // indirect
 	golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7
 )
