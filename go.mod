@@ -12,5 +12,5 @@ require (
 	github.com/google/go-cmp v0.5.7
 	github.com/mitchellh/mapstructure v1.4.3
 	golang.org/x/net v0.0.0-20191014212845-da9a3fd4c582 // indirect
-	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+	golang.org/x/xerrors v0.0.0-20220411194840-2f41105eb62f
 )
