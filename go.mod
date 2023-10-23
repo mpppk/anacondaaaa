@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/ChimeraCoder/anaconda v2.0.0+incompatible
-	github.com/google/go-cmp v0.5.8
+	github.com/google/go-cmp v0.6.0
 	github.com/mitchellh/mapstructure v1.5.0
 	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028
 )
